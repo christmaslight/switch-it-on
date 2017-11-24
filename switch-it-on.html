@@ -32,7 +32,7 @@
     </style>
     <script type="text/javascript" class="silex-script">
         function playSound() {
-            try {
+            try {$('.sound-on-click').click(snd.currentTime=0);
                 var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
                 var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
                 snd.play()
@@ -40,7 +40,7 @@
         }
         $(function() {
             $('.sound-on-click').click(playSound);
-            $('.sound-on-click').click(snd.currentTime=0);
+            
         })
     </script>
     <style class="silex-inline-styles" type="text/css">
