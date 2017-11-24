@@ -31,18 +31,18 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        $(function() {
-            $('.sound-on-click').click(play_and_stop);
-        })
+        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
         
-        function play_and_stop(){
-                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
-        if (snd.pause) {
-            snd.play();
-        } else {
-            snd.pause();
-        }
-    }
+                $(function() {
+                    $('.sound-on-click').click(play_and_stop);
+                })
+                
+                function play_and_stop(){
+                if (snd.play) {
+                    snd.pause();
+                } else {}
+                    snd.play();
+            }
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
