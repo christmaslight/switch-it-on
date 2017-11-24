@@ -29,13 +29,13 @@
                         $(function() {
                             $('.sound-on-click').click(snd_play);
                           
-                         snowStorm.toggleSnow();
-                     
                         })
                         
                         function snd_play(){
                          snd.play();
-                         }
+                         snowStorm.toggleSnow();
+                            
+                        }
                         
                         $(function() {
                             $('.stp-on-click').click(snd_stop);
