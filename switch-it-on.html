@@ -23,24 +23,26 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+        snowStorm.freeze();
         
-                $(function() {
-                    $('.sound-on-click').click(snd_play);
-                })
+                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
                 
-                function snd_play(){
-                 snd.play();
-                 snowStorm.resume()
-                }
-                
-                $(function() {
-                    $('.stp-on-click').click(snd_stop);
-                })
-                function snd_stop(){
-                    snd.pause();
-                    snowStorm.stop();
-                }
+                        $(function() {
+                            $('.sound-on-click').click(snd_play);
+                        })
+                        
+                        function snd_play(){
+                         snd.play();
+                         snowStorm.resume()
+                        }
+                        
+                        $(function() {
+                            $('.stp-on-click').click(snd_stop);
+                        })
+                        function snd_stop(){
+                            snd.pause();
+                            snowStorm.stop();
+                        }
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
