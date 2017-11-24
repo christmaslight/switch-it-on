@@ -38,11 +38,13 @@
                 })
                 
                 function play_and_stop(){
-                if (snd.play) {
+                if (snd.pause){
+                 snd.play();
+                    if (snd.play) {
                     snd.pause();
                 } else {}
-                    snd.play();
                     
+                }            
                 
                 
             }
