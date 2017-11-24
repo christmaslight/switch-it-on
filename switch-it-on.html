@@ -38,11 +38,12 @@
                 })
                 
                 function play_and_stop(){
-                if (snd.play) {
+                if (snd.pause) {
+                    snd.play();
+                } else {}
                     snd.pause();
-                } else {    snd.play();
                     
-                }
+                
                 
             }
     </script>
