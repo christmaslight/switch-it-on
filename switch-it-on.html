@@ -44,7 +44,7 @@
         })
         $(function() {
             if (playSound.play !== true) {
-                $('.sound-on-click').click(playSound.pause)
+                $('.sound-on-click').click(snd.currentTime=0);
             }
         })
     </script>
