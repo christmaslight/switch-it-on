@@ -23,8 +23,9 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
-                var snow=0;
+        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3"),
+                snow=0;
+
                         $(function() {
                             $('.sound-on-click').click(snd_play);
                             if (snow<1){
@@ -45,7 +46,7 @@
                         function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
-                            snow==0;
+                            snow=snow-1;
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
