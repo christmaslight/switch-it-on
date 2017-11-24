@@ -40,7 +40,12 @@
         }
         $(function() {
             $('.sound-on-click').click(playSound);
-         $('.sound-on-click').click(pause);
+        
+        })
+        $(function() {
+            if (playSound.play !== true) {
+                $('.sound-on-click').click(playSound.pause)
+            }
         })
     </script>
     <style class="silex-inline-styles" type="text/css">
