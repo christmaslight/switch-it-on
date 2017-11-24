@@ -34,14 +34,17 @@
         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
         
                 $(function() {
-                    $('.sound-on-click').click(play_and_stop);
+                    $('.sound-on-click').click(snd_play);
                 })
                 
-                function play_and_stop(){
+                function snd_play(){
                  snd.play();
-                    if (('.sound-on-click').click()) ;{
-                    snd.pause();
+                    if (snd.play){
+                        ('.sound-on-click').click(snd_stop) ;
+                    }else{}
                 }
+                function snd_stop(){
+                    snd.pause();
                     
                 }
     </script>
