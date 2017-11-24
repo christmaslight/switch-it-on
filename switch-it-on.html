@@ -33,20 +33,24 @@
     <script type="text/javascript" class="silex-script">
         function playSound() {
         try {
-                var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
-                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+                
                 snd.play()
-            } catch(e) {
-                if (snd.play)
-            {
-                snd.paused()
-            }    
-            }
+            } catch(e) {}
         }
         
         $(function() {
-            $('.sound-on-click').click(playSound);
+            $('.play_and_stop').click(playSound);
         })
+        
+        function play_and_stop(){
+            var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
+                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+if (snd.paused) {
+            snd.play();
+        } else {
+            snd.pause();
+        }
+    }
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
