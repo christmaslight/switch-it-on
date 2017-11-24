@@ -27,10 +27,22 @@
         }
         
         input[type="checkbox"]:checked {
-            content: url('different%20image%20here');
+            content: url('https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3');
         }
     </style>
-    <script type="text/javascript" class="silex-script"></script>
+    <script type="text/javascript" class="silex-script">
+        function playSound() {
+            try {
+                var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
+                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+                snd.play()
+            } catch(e) {}
+        }
+        $(function() {
+            $('.sound-on-click').click(playSound);
+            $('.sound-on-hover').hover(playSound, function(){});
+        })
+    </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
             background-color: rgba(42, 239, 211, 1);
@@ -165,8 +177,10 @@
 
 
 
+
+
     <style id="current-page-style">
-        .page-merry-christmas- {
+        .page-switch-it-on- {
             display: inherit;
         }
     </style>
@@ -181,7 +195,7 @@
                 class="silex-element-content">
         </div>
 
-        <a id="page-switch-it-on-" data-silex-type="page" class="page-element">SWITCH IT ON!!!</a><a id="page-merry-christmas-" data-silex-type="page" class="page-element page-link-active">MERRY CHRISTMAS!</a></div>
+        <a id="page-switch-it-on-" data-silex-type="page" class="page-element page-link-active">SWITCH IT ON!!!</a><a id="page-merry-christmas-" data-silex-type="page" class="page-element">MERRY CHRISTMAS!</a></div>
 
 
 
@@ -236,12 +250,11 @@
 
             <div data-silex-type="container" class="editable-style silex-id-1511478863608-0 container-element center" data-silex-id="silex-id-1511478863608-0" style="">
                 <div data-silex-type="image" class="editable-style silex-id-1511393154283-0 image-element page-switch-it-on- paged-element" data-silex-id="silex-id-1511393154283-0" style=""><img src="lights_off.jpg" class="silex-element-content"></div>
-                <div data-silex-type="image" class="editable-style silex-id-1511393969030-3 image-element page-switch-it-on- paged-element page-link-active" data-silex-id="silex-id-1511393969030-3"
-                    style="" data-silex-href="#!page-merry-christmas-"><img src="switch_off.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1511393969030-3 image-element page-switch-it-on- paged-element" data-silex-id="silex-id-1511393969030-3" style="" data-silex-href="#!page-merry-christmas-"><img src="switch_off.png" class="silex-element-content"></div>
                 <div data-silex-type="html" class="editable-style silex-id-1511472644178-3 html-element" data-silex-id="silex-id-1511472644178-3" style="">
                     <div class="silex-element-content">Kick it up a notch! <input type="checkbox"></div>
                 </div>
-                <div data-silex-type="image" class="editable-style silex-id-1511394022343-4 image-element page-merry-christmas- paged-element" data-silex-id="silex-id-1511394022343-4" style="" data-silex-href="#!page-switch-it-on-"><img src="switch_on.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1511394022343-4 image-element page-merry-christmas- paged-element page-link-active" data-silex-id="silex-id-1511394022343-4" style="" data-silex-href="#!page-switch-it-on-"><img src="switch_on.png" class="silex-element-content"></div>
                 <div data-silex-type="image" class="editable-style silex-id-1511393704549-0 image-element page-merry-christmas- paged-element" data-silex-id="silex-id-1511393704549-0" style=""><img src="lights_on.jpg" class="silex-element-content"></div>
             </div>
         </div>
@@ -253,6 +266,8 @@
 
         </div>
     </div>
+
+
 
 
 
