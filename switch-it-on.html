@@ -24,15 +24,19 @@
     </style>
     <script type="text/javascript" class="silex-script">
         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
-                
+                var snow=0;
                         $(function() {
                             $('.sound-on-click').click(snd_play);
                         })
                         
                         function snd_play(){
                          snd.play();
+                         if (snow<1){
                          snowStorm.toggleSnow();
-                        }
+                        snow=snow + 1;
+                         }else{}
+                             
+                         }
                         
                         $(function() {
                             $('.stp-on-click').click(snd_stop);
@@ -41,6 +45,7 @@
                         function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
+                            snow=0;
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
@@ -147,7 +152,7 @@
     </style>
     <title></title>
     <script type="text/javascript" class="silex-json-styles">
-        [{"desktop":{"body-initial":{"background-color":"rgba(5,163,239,1)","background-image":"","background-repeat":"no-repeat","background-attachment":"scroll","background-size":"cover","background-position":"top center"},"silex-id-1474394621033-3":{"top":"140px","left":"5px","min-width":"1200px"},"silex-id-1474394621032-2":{"width":"1200px","top":"15px","left":"100px","min-height":"524px","background-color":"transparent"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"54px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"25px","background-color":"transparent","width":"1200px","top":"15px","left":"100px"},"silex-id-1478366450713-3":{"top":"811px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1511393154283-0":{"width":"730px","left":"0px","top":"0px","min-height":"478px"},"silex-id-1511393704549-0":{"width":"730px","left":"0px","top":"0px","min-height":"478px"},"silex-id-1511393969030-3":{"width":"124px","top":"0px","right":"15px","min-height":"324px"},"silex-id-1511394022343-4":{"width":"124px","top":"0px","right":"15px","min-height":"324px"},"silex-id-1511478863608-0":{"width":"904px","background-color":"transparent","min-height":"484px","top":"23px","left":"232px"},"silex-id-1511481798055-4":{"width":"131px","top":"355px","left":"763px","background-color":"rgb(255, 255, 255)","min-height":"41px"},"silex-id-1511528048057-0":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px","top":"414px","left":"761px"},"silex-id-1511528080779-0":{"width":"131px","top":"410px","left":"763px","background-color":"rgb(255, 255, 255)","min-height":"41px"}},"mobile":{},"componentData":{}}]
+        [{"desktop":{"body-initial":{"background-color":"transparent","background-image":"","background-repeat":"no-repeat","background-attachment":"scroll","background-size":"cover","background-position":"top center"},"silex-id-1474394621033-3":{"top":"140px","left":"5px","min-width":"1200px"},"silex-id-1474394621032-2":{"width":"1200px","top":"15px","left":"100px","min-height":"524px","background-color":"transparent"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1478366444112-0":{"min-height":"54px","background-color":"transparent","width":"1200px"},"silex-id-1478366444112-1":{"top":"5px","left":"5px","background-color":"transparent"},"silex-id-1478366450713-2":{"min-height":"25px","background-color":"transparent","width":"1200px","top":"15px","left":"100px"},"silex-id-1478366450713-3":{"top":"811px","left":"5px","background-color":"transparent","min-width":"1200px"},"silex-id-1511393154283-0":{"width":"730px","left":"0px","top":"0px","min-height":"478px"},"silex-id-1511393704549-0":{"width":"730px","left":"0px","top":"0px","min-height":"478px"},"silex-id-1511393969030-3":{"width":"124px","top":"0px","right":"15px","min-height":"324px"},"silex-id-1511394022343-4":{"width":"124px","top":"0px","right":"15px","min-height":"324px"},"silex-id-1511478863608-0":{"width":"904px","background-color":"transparent","min-height":"484px","top":"23px","left":"232px"},"silex-id-1511481798055-4":{"width":"131px","top":"355px","left":"763px","background-color":"rgb(255, 255, 255)","min-height":"41px"},"silex-id-1511528048057-0":{"width":"100px","background-color":"rgb(255, 255, 255)","min-height":"100px","top":"414px","left":"761px"},"silex-id-1511528080779-0":{"width":"131px","top":"410px","left":"763px","background-color":"rgb(255, 255, 255)","min-height":"41px"}},"mobile":{},"componentData":{}}]
     </script>
 
 
