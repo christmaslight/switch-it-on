@@ -31,27 +31,29 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        function playSound() {
-        if (s= 0)
-         {
-                var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
-                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
-                snd.play()
-                s=1
-            }
-        
-        else
-        snd.paused()
-        s=0
-        }    
-        
-        $(function() {
-            $('.sound-on-click').click(playSound);
+        var sound= sound[0]
+                function playSound() {
+                
+                if (sound[0]){
+                try {
+                        var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
+                        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+                        snd.play()
+                        sound= sound+[1]
+                    } catch(e) {}
+                }else{
+                    snd.paused()
+                    sound=sound-[1]
+                }
+                }
+                
+                $(function() {
+                    $('.sound-on-click').click(playSound);
+                })
+                
+        $(function togglePlay() {
+          return playSound.paused ? playSound : playSound
         })
-        
-$(function togglePlay() {
-  return playSound.paused ? playSound : playSound
-})
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
