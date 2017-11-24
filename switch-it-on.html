@@ -34,7 +34,7 @@
         var sound= sound[0]
                 function playSound() {
                 
-                if (sound[0]){
+               
                 try {
                         var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
                         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
@@ -42,15 +42,10 @@
                         sound= sound+[1]
                     } catch(e) {}
                 }
-                }
                 
                 $(function() {
                     $('.sound-on-click').click(playSound);
                 })
-                
-        $(function togglePlay() {
-          return playSound.paused ? playSound : playSound
-        })
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
