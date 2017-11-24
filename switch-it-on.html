@@ -23,9 +23,7 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        snowStorm.freeze();
-        
-                var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
+        var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
                 
                         $(function() {
                             $('.sound-on-click').click(snd_play);
@@ -42,7 +40,7 @@
                         
                         function snd_stop(){
                             snd.pause();
-                            snowStorm.stop();
+                            snowStorm.freeze();
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
@@ -207,6 +205,8 @@
 
 
 
+
+
     <style id="current-page-style">
         .page-switch-it-on- {
             display: inherit;
@@ -301,6 +301,8 @@
 
         </div>
     </div>
+
+
 
 
 
