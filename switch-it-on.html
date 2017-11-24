@@ -40,12 +40,7 @@
         }
         $(function() {
             $('.sound-on-click').click(playSound);
-        
-        })
-        $(function() {
-            if (playSound.play !== true) {
-                $('.sound-on-click').click(snd.currentTime=0);
-            }
+            $('.sound-on-click').click(snd.currentTime=0);
         })
     </script>
     <style class="silex-inline-styles" type="text/css">
