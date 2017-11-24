@@ -33,17 +33,17 @@
     <script type="text/javascript" class="silex-script">
         function playSound() {
         try {
-                
+               
                 snd.play()
             } catch(e) {}
         }
         
         $(function() {
-            $('.play_and_stop').click(playSound);
+            $('.sound-on-click').click(play_and_stop);
         })
         
         function play_and_stop(){
-            var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
+             var url = "//www.javascriptkit.com/script/script2/whistle.ogg"
                 var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3");
 if (snd.paused) {
             snd.play();
