@@ -33,7 +33,7 @@
                         
                         function snd_play(){
                          snd.play();
-                         if (snowf=== 0){
+                         if (snowf<= 0){
                          snowStorm.toggleSnow();
                          snowf=1;
                          }else{}
@@ -46,7 +46,7 @@
                         function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
-                            snowf===0;
+                            snowf=snowf-1;
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
