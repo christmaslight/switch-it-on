@@ -167,6 +167,7 @@
 
                         $(function() {
                             $('.sound-on-click').click(snd_play); 
+                            snowfall({flakeCount : 100, maxSpeed : 10});
                         })
                         
                         function snd_play(){
@@ -174,7 +175,7 @@
                             document.getElementById("bokehimg").style.display = "inline-block";
                          snd.play();
                          
-                       snowfall({flakeCount : 100, maxSpeed : 10});
+                       
                          
                         }
                         
