@@ -166,7 +166,8 @@
                 snowf=0;
 
                         $(function() {
-                            $('.sound-on-click').click(snd_play);                    })
+                            $('.sound-on-click').click(snd_play); 
+                        })
                         
                         function snd_play(){
                             document.getElementById("img").style.display = "inline-block";
@@ -179,7 +180,7 @@
                         }
                         
                         $(function() {
-                            $('.stp-on-click').click(snd_stop);
+                            $('.stp-on-click').click(snd_stop,snd_play,snd_stop);
                         })
                         
                         function snd_stop(){
