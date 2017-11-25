@@ -24,30 +24,31 @@
     </style>
     <script type="text/javascript" class="silex-script">
         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3"),
-                snow;
+                snowf=0;
 
                         $(function() {
                             $('.sound-on-click').click(snd_play);
                           
                         })
                         
-                        function snd_play(){
+                        $(function snd_play(){
                          snd.play();
-                         if (snow<1){
+                         
+                         if (snowf<1){
                          snowStorm.toggleSnow();
-                         snow==1;
+                         snowf==1;
                          }else{}
-                        }
+                        })
                         
                         $(function() {
                             $('.stp-on-click').click(snd_stop);
                         })
                         
-                        function snd_stop(){
+                        $(function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
-                            snow=0;
-                        }
+                            snowf=0;
+                        })
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
