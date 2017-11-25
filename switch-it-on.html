@@ -31,24 +31,23 @@
                           
                         })
                         
-                        $(function snd_play(){
+                        function snd_play(){
                          snd.play();
-                         
                          if (snowf<1){
                          snowStorm.toggleSnow();
                          snowf==1;
                          }else{}
-                        })
+                        }
                         
                         $(function() {
                             $('.stp-on-click').click(snd_stop);
                         })
                         
-                        $(function snd_stop(){
+                        function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
                             snowf=0;
-                        })
+                        }
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
