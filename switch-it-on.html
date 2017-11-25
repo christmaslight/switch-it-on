@@ -163,7 +163,6 @@
     </style>
     <script type="text/javascript" class="silex-script">
         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3"),
-                snow1=0,
                 snowf=0;
 
                         $(function() {
@@ -173,10 +172,10 @@
                             document.getElementById("img").style.display = "inline-block";
                             document.getElementById("bokehimg").style.display = "inline-block";
                          snd.play();
-                         if (snow1<= 0){
+                         if (snowf<= 0){
                          snowStorm.toggleSnow();
-                         snowf=snow1+1;
-                         }else{}
+                         snowf++;
+                         }else{snowf--}
                         }
                         
                         $(function() {
@@ -188,7 +187,7 @@
                             document.getElementById("bokehimg").style.display = "none";
                             snd.pause();
                             snowStorm.stop();
-                            snow1=snowf-1;
+                            snowf=snowf-1;
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
