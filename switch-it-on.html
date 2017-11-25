@@ -24,7 +24,7 @@
     </style>
     <script type="text/javascript" class="silex-script">
         var snd = new Audio("https://cdn.rawgit.com/christmaslight/switch-it-on/master/we-wish-you-a-merry-christmas2.mp3"),
-                snowf=0;
+                snowf;
 
                         $(function() {
                             $('.sound-on-click').click(snd_play);
@@ -33,9 +33,9 @@
                         
                         function snd_play(){
                          snd.play();
-                         if (snowf<=0){
+                         if (snowf=== undefined){
                          snowStorm.toggleSnow();
-                         snowf+=1;
+                         snowf=1;
                          }else{}
                         }
                         
@@ -46,7 +46,7 @@
                         function snd_stop(){
                             snd.pause();
                             snowStorm.stop();
-                            snowf=snowf.default;
+                            snowf=undefined;
                             
                         }
     </script>
