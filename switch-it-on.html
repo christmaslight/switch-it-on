@@ -170,6 +170,7 @@
                         
                         function snd_play(){
                             document.getElementById("img").style.display = "inline-block";
+                            document.getElementById("bokehimg").style.display = "inline-block";
                          snd.play();
                          if (snowf<= 0){
                          snowStorm.toggleSnow();
@@ -183,6 +184,7 @@
                         
                         function snd_stop(){
                             document.getElementById("img").style.display = "none";
+                            document.getElementById("bokehimg").style.display = "none";
                             snd.pause();
                             snowStorm.stop();
                             snowf=snowf-1;
@@ -494,7 +496,7 @@
 
 
                 <div data-silex-type="html" class="editable-style silex-id-1511639546368-0 html-element" data-silex-id="silex-id-1511639546368-0" style="">
-                    <div class="silex-element-content"><img src="lightbokeh.png" id="img" style="width: 100%; height: 100%; display:none "></div>
+                    <div class="silex-element-content"><img src="lightbokeh.png" id="bokehimg" style="width: 100%; height: 100%; display:none "></div>
                 </div>
             </div>
 
