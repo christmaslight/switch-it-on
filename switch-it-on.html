@@ -187,11 +187,6 @@
                             snowStorm.stop();
                             snowf=snowf-1;
                         }
-                      
-                      
-function getloc() {
-    document.getElementById("locnm");
-}
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
@@ -404,7 +399,6 @@ function getloc() {
     </style>
     <!-- Silex HEAD tag do not remove -->
     <script src="snowstorm-min.js"></script>
-    <meta http-equiv='pragma' content='no-cache'>
     <!-- End of Silex HEAD tag do not remove -->
 </head>
 
@@ -551,7 +545,8 @@ function getloc() {
             <section class="webdesigntuts-workshop">
                 <form action="switch-it-on.html" method="get">
                     <input type="type" id="locnm" placeholder="Enter your location...">
-                    <button class="searchbtn">Search</button>
+                    <button class="searchbtn" onclick="getloc()">Search</button>
+
                 </form>
             </section>
         </div>
