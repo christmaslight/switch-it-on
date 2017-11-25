@@ -45,8 +45,11 @@
                         
                         function snd_stop(){
                             snd.pause();
-                            snowf=snowf-1;
+                            if(snowf>=1){
+                            snowf=0;
                             snowStorm.stop();
+                                
+                            }else{}
                         }
     </script>
     <style class="silex-inline-styles" type="text/css">
