@@ -45,10 +45,10 @@
                         
                         function snd_stop(){
                             snd.pause();
-                            if(snowf>=1){
+                            if(snowf!==0){
                             snowf-=1;
                             snowStorm.stop();
-                                
+                            snowStorm.stop();    
                             }else{}
                         }
     </script>
