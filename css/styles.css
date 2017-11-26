@@ -1,12 +1,157 @@
 
-        .pht1 {
+        .container-element.center {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .html-element.schbx {
+            position: absolute;
+            top: 25%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        .webdesigntuts-workshop {
+            height: 100%;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .webdesigntuts-workshop:before {
+            background: #444;
+            background: linear-gradient(left, #151515, #444, #151515);
+            top: 192px;
+        }
+        
+        .webdesigntuts-workshop:after {
+            background: #000;
+            background: linear-gradient(left, #151515, #000, #151515);
+            top: 191px;
+        }
+        
+        .webdesigntuts-workshop form {
+            background: #111;
+            background: linear-gradient(#1b1b1b, #111);
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: inset 0 0 0 1px #272727;
+            display: inline-block;
+            font-size: 0px;
+            margin: 150px auto 0;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .webdesigntuts-workshop input {
+            background: #222;
+            background: linear-gradient(#333, #222);
+            border: 1px solid #444;
+            border-radius: 5px 0 0 5px;
+            box-shadow: 0 2px 0 #000;
+            color: #888;
             display: block;
-            /*for the img inside your div */
-            margin: 0 auto
+            float: left;
+            font-family: 'Cabin', helvetica, arial, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            height: 40px;
+            margin: 0;
+            padding: 0 10px;
+            text-shadow: 0 -1px 0 #000;
+            width: 200px;
+        }
+        
+        .ie .webdesigntuts-workshop input {
+            line-height: 40px;
+        }
+        
+        .webdesigntuts-workshop input::-webkit-input-placeholder {
+            color: #888;
+        }
+        
+        .webdesigntuts-workshop input:-moz-placeholder {
+            color: #888;
+        }
+        
+        .webdesigntuts-workshop input:focus {
+            animation: glow 800ms ease-out infinite alternate;
+            background: #222922;
+            background: linear-gradient(#333933, #222922);
+            border-color: #393;
+            box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;
+            color: #efe;
+            outline: none;
+        }
+        
+        .webdesigntuts-workshop input:focus::-webkit-input-placeholder {
+            color: #efe;
+        }
+        
+        .webdesigntuts-workshop input:focus:-moz-placeholder {
+            color: #efe;
+        }
+        
+        .webdesigntuts-workshop button {
+            background: #222;
+            background: linear-gradient(#333, #222);
+            box-sizing: border-box;
+            border: 1px solid #444;
+            border-left-color: #000;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 2px 0 #000;
+            color: #fff;
+            display: block;
+            float: left;
+            font-family: 'Cabin', helvetica, arial, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            height: 42px;
+            line-height: 40px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-shadow: 0 -1px 0 #000;
+            width: 80px;
+        }
+        
+        .webdesigntuts-workshop button:hover,
+        .webdesigntuts-workshop button:focus {
+            background: #292929;
+            background: linear-gradient(#393939, #292929);
+            color: #5f5;
+            outline: none;
+        }
+        
+        .webdesigntuts-workshop button:active {
+            background: #292929;
+            background: linear-gradient(#393939, #292929);
+            box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+            top: 1px;
+        }
+        
+        @keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000;
+            }
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000;
+            }
         }
     
         .body-initial {
-            background-color: rgba(42, 239, 211, 1);
+            background-color: rgba(11, 7, 63, 1);
+            background-image: url('../assets/normal_bg.jpg');
+            background-repeat: repeat-x;
+            background-attachment: fixed;
+            background-size: auto;
+            background-position: top left;
         }
         
         .silex-id-1478366444112-1 {
@@ -28,50 +173,102 @@
         }
         
         .silex-id-1474394621032-2 {
-            min-height: 586px;
-            background-color: transparent;
             width: 1200px;
             top: 15px;
             left: 100px;
+            min-height: 524px;
+            background-color: transparent;
         }
         
-        .silex-id-1511393154283-0 {
-            width: 730px;
-            min-height: 478px;
-            top: 25px;
-            left: 17px;
-        }
-        
-        .silex-id-1511393704549-0 {
-            width: 730px;
-            min-height: 487px;
-            top: 20px;
-            left: 15px;
+        .silex-id-1511478863608-0 {
+            width: 904px;
+            background-color: transparent;
+            min-height: 484px;
+            top: 23px;
+            left: 232px;
         }
         
         .silex-id-1511393969030-3 {
             width: 124px;
-            top: 92px;
-            left: 811px;
+            top: 0px;
+            right: 15px;
             min-height: 324px;
         }
         
         .silex-id-1511394022343-4 {
             width: 124px;
-            top: 92px;
-            left: 811px;
+            top: 0px;
+            right: 15px;
             min-height: 324px;
+        }
+        
+        .silex-id-1511393704549-0 {
+            width: 701px;
+            left: 0px;
+            top: 0px;
+            min-height: 459px;
+        }
+        
+        .silex-id-1511481798055-4 {
+            width: 75px;
+            top: 343px;
+            left: 790px;
+            background-color: rgb(255, 255, 255);
+            min-height: 18px;
+        }
+        
+        .silex-id-1511528080779-0 {
+            width: 75px;
+            top: 380px;
+            left: 790px;
+            background-color: rgb(255, 255, 255);
+            min-height: 18px;
+        }
+        
+        .silex-id-1511618175217-1 {
+            width: 701px;
+            left: 0px;
+            top: 0px;
+            min-height: 459px;
+        }
+        
+        .silex-id-1511639546368-0 {
+            width: 701px;
+            top: 0px;
+            left: 0px;
+            opacity: 0.3;
+            height: 459px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1511637674426-4 {
+            width: 117px;
+            top: 8px;
+            left: 533px;
+            background-color: transparent;
+            min-height: 134px;
         }
         
         .silex-id-1478366450713-3 {
             top: 811px;
             left: 5px;
             background-color: transparent;
+            min-width: 1200px;
         }
         
         .silex-id-1478366450713-2 {
-            min-height: 287px;
+            min-height: 25px;
             background-color: transparent;
             width: 1200px;
+            top: 15px;
+            left: 100px;
+        }
+        
+        .silex-id-1511628532167-1 {
+            width: 1018px;
+            background-color: transparent;
+            min-height: 429px;
+            top: -49px;
+            left: 93px;
         }
     
