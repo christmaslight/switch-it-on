@@ -9,6 +9,7 @@
                             document.getElementById("img").style.display = "inline-block";
                             document.getElementById("bokehimg").style.display = "inline-block";
                          snd.play();
+                         snowStorm.start();
                          snowStorm.resume();
                         }
                         
