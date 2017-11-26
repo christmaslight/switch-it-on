@@ -167,16 +167,18 @@
 
                         $(function() {
                             $('.sound-on-click').click(snd_play); 
-                            body.snowfall({flakeCount : 100, maxSpeed : 10});
                         })
                         
                         function snd_play(){
                             document.getElementById("img").style.display = "inline-block";
                             document.getElementById("bokehimg").style.display = "inline-block";
                          snd.play();
-                         
-                       
-                         
+                          if (snowf<= 0){
+                             snowfall();
+                             snowStorm.toggleSnow();
+                         snowf++;
+                         }else{snowf--}
+                    
                         }
                         
                         $(function() {
