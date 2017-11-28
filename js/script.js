@@ -8,6 +8,7 @@
                         function snd_play(){
                             document.getElementById("img").style.display = "inline-block";
                             document.getElementById("bokehimg").style.display = "inline-block";
+                            document.getElementById("img_1").style.display = "inline-block";
                          snd.play();
                          snowStorm.start();
                          snowStorm.resume();
@@ -20,6 +21,7 @@
                         function snd_stop(){
                             document.getElementById("img").style.display = "none";
                             document.getElementById("bokehimg").style.display = "none";
+                            document.getElementById("img_1").style.display = "none";
                             snd.pause();
                             snowStorm.stop();
                         }
