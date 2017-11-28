@@ -14,6 +14,14 @@
             margin: auto;
         }
         
+        .container-element.banner_1 {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
         .webdesigntuts-workshop {
             height: 100%;
             position: absolute;
@@ -249,12 +257,36 @@
             min-height: 134px;
         }
         
-        .silex-id-1511906220538-1 {
-            width: 179px;
-            top: 261px;
-            left: 18px;
+        .silex-id-1511906763601-0 {
+            width: 139px;
+            bottom: 15px;
+            left: 0px;
             background-color: transparent;
-            min-height: 214px;
+            min-height: 166px;
+        }
+        
+        .silex-id-1511907061619-1 {
+            width: 150px;
+            bottom: 0px;
+            left: 600px;
+            background-color: transparent;
+            min-height: 150px;
+        }
+        
+        .silex-id-1511907743885-0 {
+            width: 75px;
+            top: 417px;
+            left: 790px;
+            background-color: rgb(255, 255, 255);
+            min-height: 25px;
+        }
+        
+        .silex-id-1511907299374-2 {
+            width: 167px;
+            top: 0px;
+            left: 90px;
+            background-color: transparent;
+            min-height: 181px;
         }
         
         .silex-id-1478366450713-3 {
@@ -278,5 +310,18 @@
             min-height: 429px;
             top: -49px;
             left: 93px;
+        }
+        
+        .silex-id-1511910007383-1 {
+            width: 1080px;
+            background-color: transparent;
+            min-height: 120px;
+        }
+        
+        .silex-id-1511910820323-1 {
+            width: 1080px;
+            top: 0px;
+            left: 0px;
+            min-height: 120px;
         }
     
