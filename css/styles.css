@@ -170,7 +170,7 @@
         }
     
         .body-initial {
-            background-color: rgba(11, 7, 63, 1);
+            background-color: rgba(255, 255, 255, 1);
             background-image: url('../assets/background.jpg');
             background-repeat: repeat-y;
             background-attachment: fixed;
