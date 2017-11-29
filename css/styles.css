@@ -24,7 +24,7 @@
         
         .text-element.desc {
             position: absolute;
-            top: 133px;
+            top: 110px;
             left: 0;
             right: 0;
             margin: auto;
@@ -188,10 +188,10 @@
         
         .silex-id-1511912055642-11 {
             width: 1080px;
-            background-color: transparent;
-            min-height: 120px;
             top: 100px;
             left: 37px;
+            background-color: transparent;
+            min-height: 190px;
         }
         
         @media only screen and (max-width: 480px),
@@ -210,6 +210,12 @@
             top: 0px;
             left: 0px;
             min-height: 120px;
+        }
+        
+        .silex-id-1511963518982-1 {
+            width: 800px;
+            left: 144px;
+            min-height: 100px;
         }
         
         .silex-id-1474394621033-3 {
@@ -370,10 +376,5 @@
             left: 5.5px;
             min-height: 105px;
             background-color: transparent;
-        }
-        
-        .silex-id-1511963518982-1 {
-            width: 800px;
-            min-height: 100px;
         }
     
