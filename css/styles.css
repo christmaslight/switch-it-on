@@ -16,7 +16,6 @@
         
         .html-element.locat {
             position: absolute;
-            top: 0;
             left: 0;
             right: 0;
             margin: auto;
@@ -226,7 +225,7 @@
         }
         
         .caption-style-4 img {
-            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
+            filter: url('data:image/svg+xml;utf8,<svg xmlns=\'//www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale');
             /* Firefox 3.5+ */
             filter: gray;
             /* IE6-9 */
@@ -318,12 +317,6 @@
                 background-color: transparent;
                 min-height: 120px;
             }
-        }
-        
-        .silex-id-1511963518982-1 {
-            width: 800px;
-            left: 144px;
-            min-height: 100px;
         }
         
         .silex-id-1512222513371-1 {
@@ -488,6 +481,34 @@
             min-height: 459px;
         }
         
+        .silex-id-1512296674385-3 {
+            width: 124px;
+            top: 0px;
+            right: 15px;
+            min-height: 324px;
+        }
+        
+        .silex-id-1512296738353-4 {
+            width: 124px;
+            top: 0px;
+            right: 15px;
+            min-height: 324px;
+        }
+        
+        .silex-id-1512345562974-1 {
+            width: 701px;
+            top: 0px;
+            left: 0px;
+            min-height: 459px;
+        }
+        
+        .silex-id-1512347476588-2 {
+            width: 701px;
+            top: 0px;
+            left: 0px;
+            min-height: 459px;
+        }
+        
         .silex-id-1511639546368-0 {
             width: 701px;
             top: 0px;
@@ -495,6 +516,14 @@
             opacity: 0.3;
             height: 459px;
             background-color: transparent;
+        }
+        
+        .silex-id-1511906763601-0 {
+            width: 139px;
+            bottom: 15px;
+            left: 0px;
+            background-color: transparent;
+            min-height: 166px;
         }
         
         .silex-id-1511637674426-4 {
@@ -513,22 +542,14 @@
             min-height: 150px;
         }
         
-        .silex-id-1511906763601-0 {
-            width: 139px;
-            bottom: 15px;
-            left: 0px;
-            background-color: transparent;
-            min-height: 166px;
-        }
-        
-        .silex-id-1512296674385-3 {
+        .silex-id-1512347638035-3 {
             width: 124px;
             top: 0px;
             right: 15px;
             min-height: 324px;
         }
         
-        .silex-id-1512296738353-4 {
+        .silex-id-1512347689954-5 {
             width: 124px;
             top: 0px;
             right: 15px;
@@ -541,25 +562,6 @@
             left: 10px;
             background-color: transparent;
             min-height: 181px;
-        }
-        
-        .silex-id-1511628532167-1 {
-            top: -49px;
-            left: 93px;
-            background-color: transparent;
-            min-height: 429px;
-            width: 960px;
-        }
-        
-        @media only screen and (max-width: 480px),
-        only screen and (max-device-width: 480px) {
-            .silex-id-1511628532167-1 {
-                width: 1018px;
-                top: 120px;
-                left: 0px;
-                background-color: transparent;
-                min-height: 429px;
-            }
         }
         
         .silex-id-1511957606256-1 {
@@ -585,6 +587,14 @@
         
         .silex-id-1512218629384-3 {
             width: 1080px;
+            top: 0px;
+            background-color: transparent;
+            min-height: 200px;
+        }
+        
+        .silex-id-1512345195209-0 {
+            width: 1080px;
+            top: 200px;
             background-color: transparent;
             min-height: 200px;
         }
