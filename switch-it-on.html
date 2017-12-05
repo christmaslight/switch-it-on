@@ -284,9 +284,6 @@
             -o-transition: all 0.25s ease-in-out;
             -ms-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
-            -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.36);
-            -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.36);
-            box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.36);
         }
         
         .caption-style-4 .blur {
@@ -310,6 +307,39 @@
             height: 200px;
             text-align: center;
             top: 85px;
+        }
+        
+        .caption-style-4.box-shadow {
+            position: relative;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+        
+        .box-shadow:before,
+        .box-shadow:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            top: 0;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            -moz-border-radius: 100px / 10px;
+            border-radius: 100px / 10px;
+        }
+        
+        .box-shadow:after {
+            right: 10px;
+            left: auto;
+            -webkit-transform: skew(8deg) rotate(3deg);
+            -moz-transform: skew(8deg) rotate(3deg);
+            -ms-transform: skew(8deg) rotate(3deg);
+            -o-transform: skew(8deg) rotate(3deg);
+            transform: skew(8deg) rotate(3deg);
         }
     </style>
     <script type="text/javascript" class="silex-script">
@@ -1285,6 +1315,7 @@
                             <img src="tbn/regentstreet_off_tbn.jpg" alt="">
                             <div class="caption">
                                 <a href="switch-it-on.html#!page-regentst_off">
+                                    <div class="box-shadow"></div>
                                     <div class="blur"></div>
                                     <div class="caption-text">
                                         <h1>Regent Street</h1>
